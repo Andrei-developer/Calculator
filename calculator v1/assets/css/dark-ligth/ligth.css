@@ -1,0 +1,87 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --white-1: #d5d5d5;
+  --white-2: #e5e5e5;
+  --white-3: #ebebeb;
+  --white-4: #b2b2b2;
+  --white-5: #dedede;
+  --grey: #777777;
+  --red: #ff0000;
+  --whie-red: #ff9696;
+  --black-red: #fd7070;
+  --black-red2: #ffa4a4;
+  --green: #005c08;
+  --white-green: #64ff719d;
+  --black-green: #00c01091;
+  --black-green2: #54fd62;
+  --orange: #ff7300;
+  --white-orange: #ffc290;
+  --black-orange: #ff9741;
+  --black-orange2: #ffc290;
+}
+
+body {
+  background-color: var(--white-1);
+}
+
+#calculator {
+  background-color: var(--grey);
+  box-shadow: 5px 5px 10px var(--black);
+}
+
+#display {
+  background-color: var(--white-2);
+}
+
+button {
+  background-color: var(--white-3);
+  color: #000000;
+}
+
+button:hover {
+  background-color: var(--white-4);
+}
+
+button:active {
+  background-color: var(--white-5);
+}
+
+.clearButton {
+  background-color: var(--whie-red);
+  color: var(--red);
+}
+
+.clearButton:hover {
+  background-color: var(--black-red);
+}
+
+.clearButton:active {
+  background-color: var(--black-red2);
+}
+
+.calculateBtn {
+  background-color: var(--white-green);
+  color: var(--green);
+}
+
+.calculateBtn:hover {
+  background-color: var(--black-green);
+}
+
+.calculateBtn:active {
+  background-color: var(--black-green2);
+}
+
+.deletLast {
+  background-color: var(--white-orange);
+  color: var(--orange);
+}
+
+.deletLast:hover {
+  background-color: var(--black-orange);
+}
+
+.deletLast:active {
+  background-color: var(--black-orange2);
+}

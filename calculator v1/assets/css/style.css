@@ -1,0 +1,198 @@
+/* /////////////////////// 
+ -------Resset code-------- 
+ /////////////////////// */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+/* /////////////////////// 
+ -------    Root   -------- 
+ /////////////////////// */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+#calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+  border-radius: 20px;
+}
+
+#display {
+  height: 90px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 30.5px;
+  border: none;
+}
+
+#butoane {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  font-size: 30px;
+  border: none;
+  user-select: none;
+}
+
+#btnChange {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 55px;
+  border-radius: 60px;
+  background-color: #000000;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.ligth {
+  animation: ligth 2s forwards;
+}
+
+@keyframes ligth {
+  0% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #00ffff;
+    box-shadow: 0px 0px 10px #00ffff;
+  }
+}
+
+.dark {
+  animation: dark 2s forwards;
+}
+
+@keyframes dark {
+  0% {
+    background-color: #00ffff;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+
+#change-color {
+  width: 130px;
+  height: 50px;
+  background-color: #999999;
+  border-radius: 50px;
+}
+
+#change {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: none;
+}
+
+.change-1 {
+  animation: changeColor-1 2s forwards;
+}
+
+@keyframes changeColor-1 {
+  from {
+    transform: translateX(0px);
+    background-color: #ffffff;
+  }
+  to {
+    transform: translateX(80px);
+    background-color: black;
+  }
+}
+
+.change-2 {
+  animation: changeColor-2 2s forwards;
+}
+
+@keyframes changeColor-2 {
+  from {
+    transform: translateX(80px);
+    background-color: black;
+  }
+  to {
+    transform: translateX(0px);
+    background-color: #ffffff;
+  }
+}
+
+/* //responsive// */
+
+@media (max-width: 800px) {
+  #btnChange {
+    left: 0px;
+    position: relative;
+  }
+  body {
+    top: 0px;
+    gap: 55px;
+    flex-direction: column;
+    margin: 40px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  #display {
+    height: 60px;
+  }
+  #btnChange {
+    top: 0px;
+    position: relative;
+  }
+
+  #calculator {
+    width: 300px;
+  }
+
+  button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+}

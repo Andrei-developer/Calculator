@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/dark-ligth/ligth.css"
+            id="change-color">
+
+    </head>
+    <body>
+        <div id="btnChange">
+            <div id="change-color">
+                <button id="change" class="change-2"></button>
+            </div>
+        </div>
+        <div id="calculator">
+            <input type="text" id="display" disabled>
+            <div id="butoane">
+                <button onclick="clearDisplay()" class="clearButton">C</button>
+                <button onclick="deletLast()" class="deletLast">DEL</button>
+                <button onclick="items('*')">X</button>
+                <button onclick="items('/')">%</button>
+
+                <button onclick="items('7')">7</button>
+                <button onclick="items('8')">8</button>
+                <button onclick="items('9')">9</button>
+                <button onclick="items('+')">+</button>
+
+                <button onclick="items('4')">4</button>
+                <button onclick="items('5')">5</button>
+                <button onclick="items('6')">6</button>
+                <button onclick="items('-')">-</button>
+
+                <button onclick="items('1')">1</button>
+                <button onclick="items('2')">2</button>
+                <button onclick="items('3')">3</button>
+                <button onclick="calculate()" class="calculateBtn">=</button>
+
+                <button onclick="items('0')">0</button>
+                <button onclick="items('.')">.</button>
+            </div>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
